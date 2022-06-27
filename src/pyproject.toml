@@ -1,0 +1,72 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["martin <martingaldeca@gmail.com>"]
+
+[tool.poetry.dependencies]
+# Common
+python = "^3.10"
+setuptools = "59.6.0"
+ipython = "*"
+
+# Django
+Django = "*"
+Pillow = "*"
+
+# Gunicorn
+gunicorn = "*"
+httptools = "*"
+
+# Django jet
+django-4-jet = "*"
+
+# PostgreSQL
+psycopg2 = "*"
+
+# Utils
+django-extensions = "*"
+django-debug-toolbar = "*"
+django-simple-history = "*"
+django-model-utils = "*"
+
+# Make sure static file is well configured
+whitenoise = "*"
+
+# Used to compress static / versioning
+django_compressor = "*"
+csscompressor = "*"
+
+# Testing and QA
+flake8 = "*"
+pytest-django = "*"
+factory_boy = "*"
+ipdb = "*"
+freezegun = "*"
+pytest-xdist = "*"
+
+# Django rest framework
+djangorestframework = "*"
+django-cors-headers = "*"
+djangorestframework-simplejwt = "*"
+drf-api-logger = "*"
+user-agents = "^2.2.0"
+
+# Cache
+django-redis = "*"
+
+# Waffle
+django-waffle = "*"
+django-axes = "^5.23.0"
+
+# AWS
+django-storages = "<1.13"
+boto3 = "^1.23.8"
+drf-spectacular = "^0.22.1"
+responses = "^0.21.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

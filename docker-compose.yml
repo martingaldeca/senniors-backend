@@ -1,0 +1,65 @@
+version: '3.7'
+services:
+  backend:
+    container_name: ${PROJECT_NAME}_backend
+    hostname: backend
+    restart: always
+    image: ${PROJECT_NAME}_backend_image
+    build:
+      context: .
+      dockerfile: docker/src/Dockerfile
+    command: sh /run_scripts/post_deploy.sh
+    volumes:
+      - ./src:/src/
+      - vol_logs:/src/logs
+      - vol_media:/src/media
+    env_file:
+      - .env
+    ports:
+      - "${BACKEND_PORT}:${BACKEND_PORT}"
+    links:
+      - postgres
+      - redis
+    depends_on:
+      - postgres
+      - redis
+    logging:
+      driver: "json-file"
+      options:
+        max-size: 50m
+        max-file: "2"
+  postgres:
+    image: postgres:13
+    container_name: ${PROJECT_NAME}_postgres
+    hostname: postgres
+    restart: 'always'
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: 50m
+        max-file: "2"
+    ports:
+      - "${POSTGRES_EXTERNAL_PORT}:5432"
+    volumes:
+      - vol_postgres_db:/var/lib/postgresql/data
+      - vol_logs:/logs
+      - vol_media:/src/media
+  redis:
+    image: redis:6.2.3-alpine
+    container_name: ${PROJECT_NAME}_backend_redis
+    env_file:
+      - .env
+    volumes:
+      - vol_redis:/var/lib/redis
+      - vol_media:/src/media
+volumes:
+  vol_media:
+    driver: local
+  vol_logs:
+    driver: local
+  vol_postgres_db:
+    driver: local
+  vol_redis:
+    driver: local

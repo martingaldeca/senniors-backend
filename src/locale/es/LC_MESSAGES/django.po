@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-26 22:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: backend/settings/settings.py:190
+msgid "Users"
+msgstr "Usuarios"
+
+#: backend/settings/settings.py:198 core/models/appointment.py:44
+msgid "Appointments"
+msgstr "Citas"
+
+#: core/admin/user_admin.py:12
+msgid "Base info"
+msgstr "Información base"
+
+#: core/admin/user_admin.py:18
+msgid "Personal info"
+msgstr "Información personal"
+
+#: core/admin/user_admin.py:24
+msgid "Permissions"
+msgstr "Permisos"
+
+#: core/admin/user_admin.py:30
+msgid "Important dates"
+msgstr "Fechas importantes"
+
+#: core/models/appointment.py:14 core/models/clinic_history.py:60
+msgid "Clinic history"
+msgstr "Historial clínico"
+
+#: core/models/appointment.py:15
+msgid "Clinic history of the user."
+msgstr "Historial clínico del usuario."
+
+#: core/models/appointment.py:20
+msgid "Scheduled"
+msgstr "Programado"
+
+#: core/models/appointment.py:21
+msgid "Date when the appointment was scheduled."
+msgstr "Fecha cuando la cita fue programada"
+
+#: core/models/appointment.py:26
+msgid "Day"
+msgstr "Día"
+
+#: core/models/appointment.py:27
+msgid "Day when the appointment will take place."
+msgstr "Día cuando la cita tendrá lugar."
+
+#: core/models/appointment.py:32
+msgid "Sms received"
+msgstr "Sms recibido"
+
+#: core/models/appointment.py:33
+msgid "The moment when the user receives the sms."
+msgstr "El momento en el que el usuario recibe el sms."
+
+#: core/models/appointment.py:38
+msgid "Attendance"
+msgstr "Asistencia"
+
+#: core/models/appointment.py:39
+msgid "Field that show if the user attended the appointment."
+msgstr "Fecha que muestra si el usuario ha asistido a la cita."
+
+#: core/models/appointment.py:43
+msgid "Appointment"
+msgstr "Cita"
+
+#: core/models/clinic_history.py:15
+msgid "User"
+msgstr "Usuario"
+
+#: core/models/clinic_history.py:16
+msgid "User associated to the clinic history"
+msgstr "Usuario asociado al historial clínico"
+
+#: core/models/clinic_history.py:21
+msgid "Scholarship"
+msgstr "Beca"
+
+#: core/models/clinic_history.py:23
+msgid "Field indicating whether the customer is suffering from scholarship."
+msgstr "Campo que indica si el cliente tiene una beca."
+
+#: core/models/clinic_history.py:29
+msgid "Hypertension"
+msgstr "Hipertensión"
+
+#: core/models/clinic_history.py:31
+msgid "Field that shows if the customer has an active hypertension."
+msgstr "Campo que indica si el cliente sufre de hipertensión."
+
+#: core/models/clinic_history.py:37
+msgid "Diabetes"
+msgstr "Diabetes"
+
+#: core/models/clinic_history.py:39
+msgid "Field indicating whether the customer is suffering from diabetes."
+msgstr "Campo que indica si el cliente sufre de diabetes."
+
+#: core/models/clinic_history.py:45
+msgid "Alcoholism"
+msgstr "Alcoholism"
+
+#: core/models/clinic_history.py:47
+msgid "Field indicating whether the customer is suffering from alcoholism."
+msgstr "Campo que indica si el cliente sufre de alcoholism."
+
+#: core/models/clinic_history.py:53
+msgid "Handicap"
+msgstr "Discapacidad"
+
+#: core/models/clinic_history.py:55
+msgid "Field indicating whether the customer is suffering from handicap."
+msgstr "Campo que indica si el cliente sufre de discapacidad."
+
+#: core/models/clinic_history.py:61
+msgid "Clinic histories"
+msgstr "Historiales clínicos"
+
+#: core/models/user.py:14
+msgid "Male"
+msgstr "Varón"
+
+#: core/models/user.py:15
+msgid "Female"
+msgstr "Mujer"
+
+#: core/models/user.py:20
+msgid "Patient"
+msgstr "Paciente"
+
+#: core/models/user.py:21
+msgid "Familiar"
+msgstr "Familiar"
+
+#: core/models/user.py:29
+msgid "Gender"
+msgstr "Género"
+
+#: core/models/user.py:30
+msgid "Gender of the customer, it can be (for now), male (m) or female (f)."
+msgstr "Género del cliente, puede ser (por ahora), hombre (m) o mujer (f)."
+
+#: core/models/user.py:37
+msgid "Customer type"
+msgstr "Tipo de cliente"
+
+#: core/models/user.py:38
+msgid "Type of the customer, it can be a patient or a familiar."
+msgstr "Tipo de cliente, puede ser un paciente o un familiar."
+
+#: core/models/user.py:43
+msgid "Birthday"
+msgstr "Cumpleaños"
+
+#: core/models/user.py:44
+msgid "Birthday of teh customer."
+msgstr "Cumpleaños del cliente."
+
+#: core/models/user.py:50
+msgid "Current neighbourhood"
+msgstr "Barrio actual"
+
+#: core/models/user.py:52
+msgid ""
+"Current neighbourhood of the customer, it can change if in the future the "
+"customer moves to another."
+msgstr ""
+"Barrio actual del cliente, puede cambiar si en el futuro el cliente se "
+"traslada a otro."
