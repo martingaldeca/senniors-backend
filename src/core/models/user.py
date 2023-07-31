@@ -80,6 +80,4 @@ class User(AbstractUser, TimeStampedUUIDModel):
         """
         if self.gender == self.G_MALE:
             return 0
-        if self.gender == self.G_FEMALE:
-            return 1
-        return -1
+        return 1 if self.gender == self.G_FEMALE else -1
